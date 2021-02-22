@@ -14,6 +14,7 @@ body {
     font-size: 16px;
     color: #1B2434;
     background-color: #F4F6F6;
+    position: relative;
 }
 
 .showcase {
@@ -30,7 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 0%;
+    top: 10%;
     left: 10%;
     transform: translateY(10%);
     transform: rotate(-5deg);
@@ -61,15 +62,15 @@ body {
     object-fit: cover;
     box-shadow: 0 5px 10px rgba(15, 15, 15, 0.56), 0 5px 10px rgba(15, 15, 15, 0.53);
 }
-.img-1 #img-b {
-    width: 40%;
+ #img-b {
+    width: 45%;
     position: absolute;
     top: 0px;
     right: 0px;
     border-bottom-left-radius: 30px;
 }
-.img-1 #img-t {
-    width: 40%;
+#img-t {
+    width: 45%;
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -78,7 +79,7 @@ body {
 .quote-top {
     width: 50%;
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     right: 2%;
     transform: rotate(-5deg);
 }
@@ -88,7 +89,7 @@ body {
     font-weight: 500;
     text-align: center;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
     .img-1 #img-t {
         width: 50vw;
     } 
@@ -142,14 +143,12 @@ body {
         font-size: 18px;
     }
 }
-@media (max-height: 500px) {
-    .showcase {
-        min-height: 500px;
-    }
-}
 .bio-container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    overflow: hidden;
     margin-top: 50px;
     padding: 20px 0;
 }
@@ -174,7 +173,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 400px;
+    height: 350px;
     border-radius: 20px;
     padding: 0 20px;
     margin: 0px 10px;
@@ -193,10 +192,10 @@ body {
 }
 .panther-img {
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 45%;
     transform: translate(-45%);
-    opacity: 0.1;
+    opacity: 0.2;
 
 }
 @media (min-width: 1100px) {
@@ -213,7 +212,7 @@ body {
         margin-bottom: 0;
     }
     .biography {
-        height: 800px;
+        height: 900px;
         padding: 0 20px;
     }
 }
@@ -231,6 +230,7 @@ body {
 .top-movies {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-top: 50px;
     padding: 0 20px;
 }
@@ -320,7 +320,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    position: relative;
+    margin: 50px 0;
 } 
 .quote {
     display: flex;
@@ -383,4 +384,9 @@ footer span {
 footer .iconify {
     font-size: 3rem;
     color: #F4F6F6;
+}
+@media (max-height: 500px) {
+    .showcase {
+        min-height: 500px;
+    }
 }
