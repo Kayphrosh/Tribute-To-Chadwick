@@ -14,7 +14,6 @@ body {
     font-size: 16px;
     color: #1B2434;
     background-color: #F4F6F6;
-    position: relative;
 }
 
 .showcase {
@@ -151,6 +150,7 @@ body {
 .bio-container {
     display: flex;
     flex-direction: column;
+    position: relative;
     margin-top: 50px;
     padding: 20px 0;
 }
