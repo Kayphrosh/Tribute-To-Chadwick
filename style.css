@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    position: relative;
 }
 html {
     scroll-behavior: smooth;
@@ -150,7 +151,6 @@ body {
 .bio-container {
     display: flex;
     flex-direction: column;
-    position: relative;
     margin-top: 50px;
     padding: 20px 0;
 }
@@ -384,9 +384,4 @@ footer span {
 footer .iconify {
     font-size: 3rem;
     color: #F4F6F6;
-}
-@media (max-height: 500px) {
-    footer {
-        height: 1000px;
-    }
 }
